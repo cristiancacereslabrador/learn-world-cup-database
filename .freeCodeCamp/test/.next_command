@@ -203,3 +203,7 @@ psql --username=freecodecamp --dbname=worldcup
 ./insert_data.sh
 ./insert_data.sh
 ./queries.sh
+psql -U postgres < worldcup.sql
+ls --color=auto
+psql -U postgres < worldcup.sql
+pg_dump -cC --inserts -U freecodecamp worldcup > worldcup.sql
